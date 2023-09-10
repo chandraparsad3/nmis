@@ -1,10 +1,11 @@
+<!-- myapp/templates/myapp/result.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Disease Predictor</title>
-
+    <title>Disease Predictor - Results</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -66,16 +67,9 @@
 </head>
 <body>
     <div class="container">
-        <h1>Disease Predictor</h1>
-        <form id="predict-form" action="result.html" method="post">
-          
-            <input type="text" id="userData" name="userData" placeholder="Enter your symptoms...">
-            <button type="submit">Predict</button>
-        </form>
-        
-
-        
+        <h1>Disease Predictor - Results</h1>
+        <p>Ayurvedic Treatment:{%  result %} </p>
+        <a href="index.html">Back to Input</a>
     </div>
 </body>
 </html>
-
